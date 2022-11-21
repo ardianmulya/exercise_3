@@ -126,7 +126,15 @@ namespace exercise_3
         {
             if (listEmpty())
                 Console.WriteLine("\nList is Empty");
-
+            else
+            {
+                Console.WriteLine("\n Record in the list are : \n");
+                Node currentNode;
+                currentNode = LAST.next;
+                for (currentNode = LAST; currentNode != null; currentNode = currentNode.next)
+                    Console.Write(currentNode.rollNumber + " " + currentNode.name + "\n");
+                Console.WriteLine();
+            }
         }
     }
     internal class Program
