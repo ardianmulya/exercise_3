@@ -14,6 +14,10 @@ namespace exercise_3
         public Node prev;
     }
 
+    class CircularLinked
+    {
+
+    }
     internal class Program
     {
         static void Main(string[] args)
