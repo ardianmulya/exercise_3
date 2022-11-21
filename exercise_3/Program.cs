@@ -164,7 +164,11 @@ namespace exercise_3
                     char ch = Convert.ToChar(Console.ReadLine());
                     switch (ch)
                     {
-
+                        case '1':
+                            {
+                                obj.insertnode();
+                            }
+                            break;
                     }
                 }
                 catch (Exception e)
