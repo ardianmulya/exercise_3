@@ -32,6 +32,11 @@ namespace exercise_3
             Node newNode = new Node();
             newNode.rollNumber = nim;
             newNode.name = nm;
+
+            if (LAST == null || nim <= LAST.rollNumber)
+            {
+                
+            }
         }
     }
     internal class Program
