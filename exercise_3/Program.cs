@@ -138,7 +138,9 @@ namespace exercise_3
         }
         public void firstnode()
         {
-
+            if (listEmpty())
+                Console.WriteLine("\nlist is empty");
+            
         }
     }
     internal class Program
