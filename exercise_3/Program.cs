@@ -124,6 +124,8 @@ namespace exercise_3
         }
         public void traverse()
         {
+            if (listEmpty())
+                Console.WriteLine("\nList is Empty");
 
         }
     }
