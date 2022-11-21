@@ -80,6 +80,10 @@ namespace exercise_3
             else
                 return (false);
         }
+        public bool delnode(int rollNo)
+        {
+            return true;
+        }
     }
     internal class Program
     {
