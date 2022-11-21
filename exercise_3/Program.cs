@@ -35,7 +35,12 @@ namespace exercise_3
 
             if (LAST == null || nim <= LAST.rollNumber)
             {
-                
+                if ((LAST != null) && (nim == LAST.rollNumber))
+                {
+                    Console.WriteLine("\nDulpicate number not allowed");
+                    return;
+                }
+               
             }
         }
     }
