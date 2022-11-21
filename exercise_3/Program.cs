@@ -21,7 +21,10 @@ namespace exercise_3
         {
             LAST = null;
         }
+        public void insertnode()
+        {
 
+        }
     }
     internal class Program
     {
