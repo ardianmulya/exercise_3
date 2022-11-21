@@ -40,7 +40,12 @@ namespace exercise_3
                     Console.WriteLine("\nDulpicate number not allowed");
                     return;
                 }
-               
+                newNode.next = LAST;
+                if (LAST != null)
+                    LAST.prev = newNode;
+                newNode.prev = null;
+                LAST = newNode;
+                return;
             }
         }
     }
