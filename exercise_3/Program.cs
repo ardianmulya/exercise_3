@@ -209,8 +209,13 @@ namespace exercise_3
                                     Console.WriteLine("\nRoll number: " + curr.rollNumber);
                                     Console.WriteLine("\nName: " + curr.name);
                                 }
-                                break;
                             }
+                            break;
+                        case '5':
+                            {
+                                obj.firstnode();
+                            }
+                            break;
                     }
                 }
                 catch (Exception e)
