@@ -84,6 +84,8 @@ namespace exercise_3
         {
             Node previous, current;
             previous = current = null;
+            if (Search(rollNo, ref previous, ref current) == false)
+                return false;
             return true;
         }
     }
