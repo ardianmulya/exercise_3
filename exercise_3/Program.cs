@@ -140,7 +140,8 @@ namespace exercise_3
         {
             if (listEmpty())
                 Console.WriteLine("\nlist is empty");
-            
+            else
+                Console.WriteLine("\nThe first record in the list is \n\n" + LAST.next.rollNumber + " " + LAST.next.name);
         }
     }
     internal class Program
