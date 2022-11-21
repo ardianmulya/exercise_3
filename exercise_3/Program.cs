@@ -16,6 +16,11 @@ namespace exercise_3
 
     class CircularLinked
     {
+        Node LAST;
+        public CircularLinked()
+        {
+            LAST = null;
+        }
 
     }
     internal class Program
