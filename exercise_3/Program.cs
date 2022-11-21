@@ -92,6 +92,17 @@ namespace exercise_3
                 LAST.next = current.next;
                 return true;
             }
+            if (rollNo <= LAST.rollNumber)
+            {
+                current = LAST.next;
+                previous = LAST.next;
+                while (rollNo > current.rollNumber || previous == LAST)
+                {
+                    previous = current;
+                    current = current.next;
+                }
+                previous.next = current.next;
+            }
             return true;
         }
     }
