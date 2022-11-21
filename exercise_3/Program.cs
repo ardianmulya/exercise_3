@@ -83,6 +83,7 @@ namespace exercise_3
         public bool delnode(int rollNo)
         {
             Node previous, current;
+            previous = current = null;
             return true;
         }
     }
