@@ -47,6 +47,26 @@ namespace exercise_3
                 LAST = newNode;
                 return;
             }
+            Node previous, current;
+            for (current = previous = LAST; current != null && nim >= current.rollNumber; previous = current, current = current.next)
+            {
+                if (nim == current.rollNumber)
+                {
+                    Console.WriteLine("\nDulicate roll numbers not allowed");
+                    return;
+                }
+            }
+            newNode.next = current;
+            newNode.prev = previous;
+
+            if (current == null)
+            {
+                newNode.next = null;
+                previous.next = newNode;
+                return;
+            }
+            current.prev = newNode;
+            previous.next = newNode;
         }
     }
     internal class Program
