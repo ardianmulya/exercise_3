@@ -8,8 +8,12 @@ namespace exercise_3
 {
     class Node
     {
-
+        public int rollNumber;
+        public string name;
+        public Node next;
+        public Node prev;
     }
+
     internal class Program
     {
         static void Main(string[] args)
