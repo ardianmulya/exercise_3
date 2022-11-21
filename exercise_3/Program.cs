@@ -33,17 +33,20 @@ namespace exercise_3
             newNode.rollNumber = nim;
             newNode.name = nm;
 
-            if (LAST == null || nim <= LAST.rollNumber)
+            if (LAST == null)
             {
-                if ((LAST != null) && (nim == LAST.rollNumber))
+                newNode.next = LAST;
+                LAST = newNode;
+                return;
+            }
+            else if (nim <= LAST.rollNumber)
+            {
+                if (LAST!= null && nim == LAST.rollNumber)
                 {
-                    Console.WriteLine("\nDulpicate number not allowed");
+                    Console.WriteLine("\n Dupliacte student number are not allowed \n");
                     return;
                 }
                 newNode.next = LAST;
-                if (LAST != null)
-                    LAST.prev = newNode;
-                newNode.prev = null;
                 LAST = newNode;
                 return;
             }
