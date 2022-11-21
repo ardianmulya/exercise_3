@@ -144,10 +144,11 @@ namespace exercise_3
                 Console.WriteLine("\nThe first record in the list is \n\n" + LAST.next.rollNumber + " " + LAST.next.name);
         }
     }
-    internal class Program
+     class Program
     {
         static void Main(string[] args)
         {
+            CircularLinked obj = new CircularLinked();
         }
     }
 }
