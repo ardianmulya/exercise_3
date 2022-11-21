@@ -86,6 +86,12 @@ namespace exercise_3
             previous = current = null;
             if (Search(rollNo, ref previous, ref current) == false)
                 return false;
+            if (rollNo == LAST.next.rollNumber)
+            {
+                current = LAST.next;
+                LAST.next = current.next;
+                return true;
+            }
             return true;
         }
     }
