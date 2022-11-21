@@ -115,6 +115,13 @@ namespace exercise_3
             }
             return true;
         }
+        public bool listEmpty()
+        {
+            if (LAST == null)
+                return true;
+            else
+                return false;
+        }
     }
     internal class Program
     {
