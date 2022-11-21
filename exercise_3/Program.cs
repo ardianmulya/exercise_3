@@ -136,6 +136,10 @@ namespace exercise_3
                 Console.WriteLine();
             }
         }
+        public void firstnode()
+        {
+
+        }
     }
     internal class Program
     {
