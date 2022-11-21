@@ -103,6 +103,16 @@ namespace exercise_3
                 }
                 previous.next = current.next;
             }
+            if (rollNo == LAST.rollNumber)
+            {
+                current = LAST;
+                previous = current.next;
+                while (previous.next != LAST)
+                    previous = previous.next;
+                previous.next = LAST.next;
+                LAST = previous;
+                return true;
+            }
             return true;
         }
     }
