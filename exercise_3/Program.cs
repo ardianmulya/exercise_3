@@ -221,6 +221,11 @@ namespace exercise_3
                                 return;
                             }
                             break;
+                        default:
+                            {
+                                Console.WriteLine("\nInvalid option");
+                            }
+                            break;
                     }
                 }
                 catch (Exception e)
