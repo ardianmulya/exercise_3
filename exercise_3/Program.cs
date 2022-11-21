@@ -185,6 +185,11 @@ namespace exercise_3
                                     Console.WriteLine("Record with roll number" + StudentNo + "deleted\n");
                             }
                             break ;
+                        case '3':
+                            {
+                                obj.traverse();
+                            }
+                            break;
                     }
                 }
                 catch (Exception e)
