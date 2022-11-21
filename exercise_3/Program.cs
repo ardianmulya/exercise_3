@@ -122,6 +122,10 @@ namespace exercise_3
             else
                 return false;
         }
+        public void traverse()
+        {
+
+        }
     }
     internal class Program
     {
