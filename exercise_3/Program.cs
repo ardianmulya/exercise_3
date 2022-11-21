@@ -216,6 +216,11 @@ namespace exercise_3
                                 obj.firstnode();
                             }
                             break;
+                        case '6':
+                            {
+                                return;
+                            }
+                            break;
                     }
                 }
                 catch (Exception e)
